@@ -32,6 +32,16 @@
 $ yarn install
 ```
 
+## Setting up ENV variables
+1. Create a `.env` file in the root of the folder and add the following variables. You can customize the values yourself
+
+```
+  POSTGRES_USER=username1
+  POSTGRES_PASSWORD=password1
+  POSTGRES_DB=notatodo
+  POSTGRES_HOST=localhost
+```
+
 ## Running the app
 
 ```bash
@@ -43,6 +53,18 @@ $ yarn run start:dev
 
 # production mode
 $ yarn run start:prod
+```
+
+## Setting up DB
+
+```bash 
+$ docker compose up
+```
+
+## Seeding DB
+The seeder will add 10000 entries to setup table, and some appropriate number for the other tables
+```bash 
+$ yarn seed
 ```
 
 ## Test

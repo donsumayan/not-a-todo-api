@@ -33,9 +33,7 @@ export class Setup {
   id: number;
 
   @Column('varchar')
-  @Index({
-    unique: true,
-  })
+  @Index()
   name: string;
 
   @Column('varchar', {

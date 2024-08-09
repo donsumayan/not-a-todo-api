@@ -56,7 +56,7 @@ export class MainSeeder implements Seeder {
         .fill(0)
         .map(() =>
           setupRepository.create({
-            name: `${faker.person.fullName()} ${faker.helpers.rangeToNumber({ min: 1, max: 1000000 })}`,
+            name: faker.person.fullName(),
             description: faker.lorem.sentence(),
             plannerType: faker.helpers.enumValue(PlannerType),
             externalSystemConfig: faker.helpers.enumValue(SystemConfigType),
